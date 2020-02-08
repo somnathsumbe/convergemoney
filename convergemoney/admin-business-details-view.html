@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://merklejobs.com:3009/users/dashboard -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title>Converge Money</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="./Converge Money_files/css" rel="stylesheet">
+		<!-- App favicon -->
+		<link rel="shortcut icon" href="http://merklejobs.com:3009/images-user/favicon.png">
+		<!-- Plugins css -->
+		<link href="stylesheets/footable.core.min.css" rel="stylesheet" type="text/css">
+		<link href="stylesheets/dataTables.bootstrap4.css" rel="stylesheet" type="text/css">
+		<link href="stylesheets/responsive.bootstrap4.css" rel="stylesheet" type="text/css">
+		<link href="stylesheets/buttons.bootstrap4.css" rel="stylesheet" type="text/css">
+		<link href="stylesheets/select.bootstrap4.css" rel="stylesheet" type="text/css">
+		<link href="stylesheets/flatpickr.min.css" rel="stylesheet">
+
+		<!-- App css -->
+		<link href="stylesheets/user-bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="stylesheets/icons.min.css" rel="stylesheet" type="text/css">
+        <link href="stylesheets/icofont.min.css" rel="stylesheet" type="text/css">
+        <link href="stylesheets/user-app.min.css" rel="stylesheet" type="text/css">
+        <link href="stylesheets/user-style.css" rel="stylesheet" type="text/css">
+        
+	</head>
+	<body>
+		<!-- Navigation Bar-->
+		<header id="topnav">
+			<!-- Topbar Start -->
+			<div class="navbar-custom">
+				<div class="container-fluid">
+					<ul class="list-unstyled topnav-menu float-right mb-0">
+						<li class="dropdown notification-list">
+							<!-- Mobile menu toggle-->
+							<a class="navbar-toggle nav-link">
+								<div class="lines">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</a>
+							<!-- End mobile menu toggle-->
+						</li>
+					</ul>
+					<!-- LOGO -->
+					<div class="logo-box">
+						<a href="/admin/dashboard" class="logo text-center">
+							<span class="logo-lg">
+								<!--  <h3>LOGO HERE</h3> -->
+								<img src="images/logo.png" alt="" height="40">
+							</span>
+							<span class="logo-sm">
+								<img src="images/logo.png" alt="" height="18">
+							</span>
+						</a>
+					</div>
+				</div>
+				<!-- end container-fluid-->
+			</div>
+			<!-- end Topbar -->      
+			<div class="topbar-menu active">
+				<div class="container-fluid in">
+					<div id="navigation" class="active">
+						<!-- Navigation Menu-->
+						<ul class="navigation-menu in">
+							<li class="nav-item active">
+								<a href="/admin/dashboard" class="nav-link active">Dashboard </a>
+							</li>
+							<!-- <li class="nav-item">
+								<a href="/admin/investments" class="nav-link">Investments</a>
+							</li> -->
+							<li class="nav-item">
+								<a href="admin-loanrequest-list.html" class="nav-link">Loan Requests</a>
+							</li>
+							<!-- <li class="has-submenu">
+								<a href="#">
+										Loans 
+										<div class="arrow-down"></div>
+								</a>
+								<ul class="submenu">
+										<li class="nav-item">
+											<a href="new-loan" class="nav-link">New Loans</a>
+										</li>
+										<li class="nav-item">
+											<a href="listed-loan" class="nav-link">Listed Loans</a>
+										</li>
+										<li class="nav-item">
+											<a href="funded-loan" class="nav-link">Funded Loans</a>
+										</li>
+								</ul>
+							</li> -->
+							<li class="has-submenu">
+								<a href="#">Users<div class="arrow-down"></div></a>
+								<ul class="submenu">
+									<li>
+										<a href="admin-investor-list.html">Investors</a>
+									</li>
+									<li>
+										<a href="admin-business-list.html">Businesses</a>
+									</li>
+								</ul>
+							</li>
+							<!-- <li>
+								<a href="/withdrawals">
+								Withdrawals 
+								</a>
+							</li>
+							<li>
+								<a href="/transactions">
+								Transactions 
+								</a>
+							</li> -->
+
+							<li>
+								<a href="/admin/loantype">Loan Type</a>
+							</li>
+							<li>
+								<a href="/admin/newusers">New Users</a>
+							</li>
+							<li>
+								<a href="/admin/deposits">User Deposits</a>
+							</li>
+							<li class="last-elements">
+								<a href="/admin/contactqueries">Contact Queries</a>
+							</li>
+							<li class="last-elements">
+								<a href="/admin/logout">Logout</a>
+							</li>
+						</ul>
+						<!-- End navigation menu -->
+						<div class="clearfix"></div>
+					</div>
+					<!-- end #navigation -->
+				</div>
+				<!-- end container -->
+			</div>
+			<!-- end navbar-custom -->
+		</header>
+	<!-- End Navigation Bar-->
+	<!-- ============================================================== -->
+	<!-- Start Page Content here -->
+		<!-- ============================================================== -->
+		<div class="wrapper">
+			<div class="container-fluid">
+<div class="row">
+		<div class="col-12">
+		<div class="row">
+			<div class="col-12">
+				<div class="card-box-tranparent">
+					<div class="page-title-box">
+						<h3>Business Details</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card-box card-body border">
+			<form action="/admin/borrowerpersonal" method="post" data-parsley-validate="" novalidate="">
+				<h4 class="header-title mb-4">Personal Details</h4>
+				<div class="row">
+					<input type="hidden" name="id" value="3">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="fullname">First Name</label>
+							<input class="form-control" value="asda" type="text" name="firstname" id="firstname" placeholder="Enter your first name" required="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="fullname">Last Name</label>
+							<input class="form-control" value="sdasd" type="text" id="lastname" name="lastname" placeholder="Enter your last name" required="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="emailaddress"> Email Address </label>
+							<input class="form-control" type="email" value="test.easydcx@gmail.com" id="email" name="email" required="" placeholder="Enter your email" readonly="">
+							<span id="email_error" style="display:none;">
+								<p class="orange" style="width: 100%;  color:red;">Email Already Exists !</p>
+							</span>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="dob">Date of Birth </label>
+							<input type="text" id="basic-datepicker" value="2002-02-07" name="dob" class="form-control flatpickr-input" placeholder="Select Date Of Birth" readonly="readonly">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Nationality </label>
+							<input type="text" name="nationality" value="Andorran" id="Nationality" class="form-control" placeholder="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Passport Number </label>
+							<input type="text" name="passportno" value="asdasd" id="passport_number" class="form-control" placeholder="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Passport Expiry Date</label>
+							<input type="text" id="basic-datepicker1" name="passportexpiry" value="2020-08-20" class="form-control" placeholder="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="buscitizen">US Citizen/ Resident for US Tax Purpose:</label><br>
+														<div class="radio radio-info form-check-inline">
+								<input type="radio" id="usyesradio" value="1" name="b_uscitizen">
+								<label for="inlineRadio1"> Yes </label>
+							</div>
+							<div class="radio form-check-inline">
+								<input type="radio" id="usnoradio" value="2" name="b_uscitizen" checked="">
+								<label for="inlineRadio2"> No </label>
+							</div>
+													</div>
+					</div>
+					<div class="col-md-12">
+						<div class="button-list">
+							<button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
+							<button type="cancel" class="btn btn-secondary waves-effect waves-light">Cancel</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="card-box card-body border">
+			<form method="post" action="/admin/borrowerdirstake">
+				<input type="hidden" name="id" value="3">
+				<h4 class="header-title mb-4">Directors / Stakeholders Details</h4>
+				<div class="row">
+					<div class="col-12 mb-2">
+						<h5 class="header-title">Directors</h5>
+					</div>
+				</div>
+				<div class="directors">
+					
+					
+										<div class="row">
+						<div class="col-md-2">
+							<div class="form-group">
+								<label for="name">Name</label>
+								<input type="text" id="" value="asdas" name="dirname1" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group">
+								<label for="name">Email</label>
+								<input type="text" id="" value="dasda@asda.cd" name="diremail1" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="form-group">
+								<label for="name">Contact No.</label>
+								<input type="text" id="" value="23132132123" name="dircontact1" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="form-group">
+								<label for="name">Company</label>
+								<input type="text" id="" value="sdasda" name="dircompany1" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="form-group">
+								<label for="name">Emirates</label>
+								<input type="text" id="" value="dasda" name="diremirates1" class="form-control">
+							</div>
+						</div>
+						<div class="col-sm-1 form-group">
+							<label style="visibility: hidden;">Remove</label>
+							<button type="button" class="btn btn-danger" id="dirbtn"><i class="fas fa-times"></i></button>
+						</div>
+					</div>
+										
+					
+					
+				</div>
+				<div class="row mb-2">
+					<div class="col-3">
+						<div class="row">
+							<div class="col-6">
+								<input type="number" id="dir_add_rows" class="form-control">
+							</div>
+							<div class="col-6">
+								<button type="button" class="btn btn-primary" id="dir_add_rows_btn">Add rows</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 mb-2">
+						<h5 class="header-title">Stakeholders</h5>
+					</div>
+				</div>
+				<div class="stakeholders">
+					
+					
+										<div class="row">
+						<div class="col-md-2">
+							<div class="form-group">
+								<label for="name">Name</label>
+								<input type="text" id="" value="sdasd" name="stakename1" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group">
+								<label for="name">Email</label>
+								<input type="text" id="" value="aasdsa@sdasd.cd" name="stakeemail1" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="form-group">
+								<label for="name">Contact No.</label>
+								<input type="text" id="" value="12234" name="stakecontact1" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="form-group">
+								<label for="name">Company</label>
+								<input type="text" id="" value="asdasd" name="stakecompany1" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="form-group">
+								<label for="name">Emirates</label>
+								<input type="text" id="" value="asdasd" name="stakeemirates1" class="form-control">
+							</div>
+						</div>
+						<div class="col-sm-1 form-group">
+							<label style="visibility: hidden;">Remove</label>
+							<button type="button" class="btn btn-danger" id="stakebtn"><i class="fas fa-times"></i></button>
+						</div>
+					</div>
+										
+					
+				</div>
+				<div class="row mb-2">
+					<div class="col-3">
+						<div class="row">
+							<div class="col-6">
+								<input type="number" id="stake_add_rows" class="form-control">
+							</div>
+							<div class="col-6">
+								<button type="button" class="btn btn-primary" id="stake_add_rows_btn">Add rows</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="button-list">
+						<button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
+						<button type="cancel" class="btn btn-secondary waves-effect waves-light">Cancel</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="card-box card-body border">
+			<form action="/admin/borrowerbusiness" method="post" data-parsley-validate="" novalidate="">
+				<h4 class="header-title mb-4">Business Details</h4>
+				<input type="hidden" name="id" value="3">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="bbusinessname">Business Name</label>
+							<input type="text" id="bbusinessname" value="sdasdasd" name="b_businessname" class="form-control" required="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="bbusinessname">Business Logo</label>
+							<input type="text" id="bbusinessname" value="31fa823eaf1d69a3ab8939c3b26f47a1.png" name="b_businesslogo" class="form-control" required="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="bdoincorporation">Launch Date</label>
+							<input type="text" id="basic-datepicker3" value="2002-02-06" name="b_doincorporation" class="form-control flatpickr-input" required="" readonly="readonly">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="bliceseno">License Number</label>
+							<input type="text" id="bliceseno" value="dasd" name="b_liceseno" class="form-control" required="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="blicenseissuedby">License Issuing Authority</label>
+							<input type="text" id="blicenseissuedby" value="asdasd" name="b_licenseissuedby" class="form-control" required="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="blicensevalidity">License Validity</label>
+							<input type="text" id="basic-datepicker4" value="2020-08-14" name="b_licensevalidity" class="form-control flatpickr-input" required="" readonly="readonly">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="bbusinessactivity">Business Activity</label>
+							<input type="text" id="bbusinessactivity" value="asdasd" name="b_businessactivity" class="form-control" required="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="bnoofstaff">Number of Staff</label>
+							<select name="b_noofstaff" id="bnoofstaff" class="form-control">
+								<option value="25">101-250</option>
+																								<option value="22">1-10</option>
+																																<option value="23">11-50</option>
+																																<option value="24">51-100</option>
+																																																								<option value="26">251-500</option>
+																																<option value="27">500 or more</option>
+																							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="bwebsite">Website</label>
+							<input type="text" id="bwebsite" value="asdas" name="b_website" class="form-control" required="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="bemirates">Emirates</label>
+							<input type="text" id="bemirates" value="Dubai" name="b_emirates" class="form-control" required="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="bindustry">Industry</label>
+							<select class="form-control" id="bindustry" name="b_industry">
+								<option value="E-Commerce">E-Commerce</option>
+								<option value="Business Development">Business Development</option>
+								<option value="Finance">Finance</option>
+								<option value="Marketing">Marketing</option>
+								<option value="Insurance">Insurance</option>
+								<option value="Small Business">Small Business</option>
+								<option value="Startup">Startup</option>
+								<option value="Operations Management">Operations Management</option>
+								<option value="Information Technology">Information Technology</option>
+								<option value="Business Development">Business Development</option>
+								<option value="Distribution">Distribution</option>
+								<option value="Restaurant">Restaurant</option>
+								<option value="Business Process">Business Process</option>
+								<option value="Logistics">Logistics</option>
+								<option value="Hospitality Industry">Hospitality Industry</option>
+								<option value="B2B Services">B2B Services</option>
+								<option value="Social Media Marketing">Social Media Marketing</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="bbusinesstype">Business Type</label>
+							<select class="form-control" id="bbusinesstype" name="b_businesstype">
+								<option value="LLP">LLP</option>
+								<option value="Pvt. Ltd.">Pvt. Ltd.</option>
+								<option value="Sole Proprietorship">Sole Proprietorship</option>
+								<option value="Partnership">Partnership</option>
+								<option value="Corporation">Corporation</option>
+								<option value="LLC">LLC</option>
+								<option value="Manufacturing">Manufacturing</option>
+								<option value="Merchandising">Merchandising</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label for="bpurpose">Purpose</label>
+							<input type="text" id="bpurpose" value="asda" name="b_purpose" class="form-control" required="">
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label for="bintroduction">Introduction</label>
+							<textarea id="bintroduction" name="b_introduction" class="form-control" required="" rows="5">sda</textarea>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label for="bwhoarewe">Who are we?</label>
+							<textarea id="bwhoarewe" name="b_whoarewe" class="form-control" required="" rows="5">sdasd</textarea>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="button-list">
+							<button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
+							<button type="cancel" class="btn btn-secondary waves-effect waves-light">Cancel</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="card-box card-body border">
+			<form action="/admin/borroweraddress" method="post" data-parsley-validate="" novalidate="">
+				<h4 class="header-title mb-4">Address Details</h4>
+				<input type="hidden" name="id" value="3">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="bbusinessaddress">Business Address</label>
+							<input type="text" id="bbusinessaddress" value="sdasda" name="b_businessaddress" class="form-control" required="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="bbusinesscity">Business City</label>
+							<input type="text" id="bbusinesscity" value="asdasd" name="b_businesscity" class="form-control" required="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="bbusinessstate">Business State</label>
+							<input type="text" id="bbusinessstate" value="asdasd" name="b_businessstate" class="form-control" required="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="bbusinesszip">Business Zip</label>
+							<input type="text" id="bbusinesszip" value="1231321" name="b_businesszip" class="form-control" required="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="bcountry">Country</label>
+							<input type="text" id="bcountry" value="United Arab Emirates" name="b_country" class="form-control" required="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="btelephone">Telephone Number</label>
+							<input type="number" id="btelephone" value="2132-32131321231" name="b_telephone" class="form-control" required="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="bpobox">PO Box</label>
+							<input type="number" id="bpobox" value="" name="b_pobox" class="form-control" required="">
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="button-list">
+							<button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
+							<button type="cancel" class="btn btn-secondary waves-effect waves-light">Cancel</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="card-box card-body border">
+			<form method="post" action="/admin/borrowervencust">
+				<input type="hidden" name="id" value="3">
+				<h4 class="header-title mb-4">Vendors/ Customers Details</h4>
+				<div class="row">
+					<div class="col-12 mb-2">
+						<h5 class="header-title">Top Customers</h5>
+					</div>
+				</div>
+				<div class="top-customers">
+					
+					
+										<div class="row">
+						<div class="col-md-3">
+							<div class="form-group">
+								<label for="name">Name</label>
+								<input type="text" id="" value="dasd" name="tcname1" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group">
+								<label for="name">Payment Details</label>
+								<input type="text" id="" value="asdas" name="tcpayment1" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="form-group">
+								<label for="name">Dealing Since</label>
+								<input type="text" id="" value="dasda" name="tcdealing1" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group">
+								<label for="name">Products / Services</label>
+								<input type="text" id="" value="sdasd" name="tcproducts1" class="form-control">
+							</div>
+						</div>
+						<div class="col-sm-1 form-group">
+							<label style="visibility: hidden;">Remove</label>
+							<button type="button" class="btn btn-danger" id="tcbtn"><i class="fas fa-times"></i></button>
+						</div>
+					</div>
+										
+					
+					
+				</div>
+				<div class="row mb-2">
+					<div class="col-3">
+						<div class="row">
+							<div class="col-6">
+								<input type="number" id="tc_add_rows" class="form-control">
+							</div>
+							<div class="col-6">
+								<button type="button" class="btn btn-primary" id="tc_add_rows_btn">Add rows</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-3"></div>
+					<div class="col-3"></div>
+					<div class="col-3"></div>
+				</div>
+				<div class="row">
+					<div class="col-12 mb-2">
+						<h5 class="header-title">Top Suppliers</h5>
+					</div>
+				</div>
+				<div class="top-suppliers">
+					
+					
+										<div class="row">
+						<div class="col-md-3">
+							<div class="form-group">
+								<label for="name">Name</label>
+								<input type="text" id="" value="asd" name="tsname1" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group">
+								<label for="name">Payment Details</label>
+								<input type="text" id="" value="sdasd" name="tspayment1" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="form-group">
+								<label for="name">Dealing Since</label>
+								<input type="text" id="" value="dasda" name="tsdealing1" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="form-group">
+								<label for="name">Products / Services</label>
+								<input type="text" id="" value="asdas" name="tsproducts1" class="form-control">
+							</div>
+						</div>
+						<!-- <div class="col-md-1 mb-4">
+							<div class="mt-4">
+								<a href="#">
+								<i class="fe-x-square text-danger fa-2x" id="tsbtn"></i>
+								</a>
+							</div>
+						</div> -->
+						<div class="col-sm-1 form-group">
+							<label style="visibility: hidden;">Remove</label>
+							<button type="button" class="btn btn-danger" id="tsbtn"><i class="fas fa-times"></i></button>
+						</div>
+					</div>
+					
+					
+					
+				</div>
+				<div class="row mb-2">
+					<div class="col-3">
+						<div class="row">
+							<div class="col-6">
+								<input type="number" id="ts_add_rows" class="form-control">
+							</div>
+							<div class="col-6">
+								<button type="button" class="btn btn-primary" id="ts_add_rows_btn">Add rows</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-3"></div>
+					<div class="col-3"></div>
+					<div class="col-3"></div>
+				</div>
+				<div class="col-md-12">
+					<div class="button-list">
+						<button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
+						<button type="cancel" class="btn btn-secondary waves-effect waves-light">Cancel</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="card-box card-body border">
+			<form action="/admin/borrowerbank" method="post" data-parsley-validate="" novalidate="">
+				<div class="content">
+					<h4>Bank Details</h4>
+				</div>
+				<input type="hidden" name="id" value="3">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="phone">Bank Name </label> 
+							<input type="text" name="b_bankname" id="bankname" value="asdasd" class="form-control" placeholder="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="phone">Account number </label> 
+							<input type="text" name="b_accountno" id="accountno" value="122121321" class="form-control" placeholder="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="city">IBAN NO</label> 
+							<input type="text" name="b_ibanno" id="ibanno" value="asdasd" class="form-control" placeholder="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="state">Swiftcode</label> 
+							<input type="text" name="b_swiftcode" value="asdasd" id="swiftcode" class="form-control" placeholder="Enter swiftcode">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="b_totdebit">Total Debit(Monthwise for last 6 months)</label>
+							<input type="text" value="1231321" id="b_totdebit" name="b_totdebit" class="form-control">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="b_totcredit">Total Credit(Monthwise for last 6 months)</label>
+							<input type="text" value="23132132" id="b_totcredit" name="b_totcredit" class="form-control">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="b_returncheques">Number of Cheque Returns in past 6 Months</label>
+							<input type="text" value="2" id="b_returncheques" name="b_returncheques" class="form-control">
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="button-list">
+							<button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
+							<button type="cancel" class="btn btn-secondary waves-effect waves-light">Cancel</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+				<div class="card-box card-body border">
+			<form action="/admin/borrowerytd" method="post" data-parsley-validate="" novalidate="">
+				<div class="content">
+					<h4>YTD (Year to Date) Data</h4>
+				</div>
+				<input type="hidden" name="id" value="3">
+				<div class="row">
+					<div class="col-12 mb-2">
+						<h5 class="header-title">YTD Data</h5>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<!-- <label>YTD Data</label> -->
+							<br>
+														<div class="radio radio-info form-check-inline">
+								<input type="radio" id="usyesradio" value="1" name="is_year">
+								<label for="inlineRadio1"> Available </label>
+							</div>
+							<div class="radio form-check-inline">
+								<input type="radio" id="usnoradio" value="2" name="is_year" checked="">
+								<label for="inlineRadio2"> Not Available </label>
+							</div>
+													</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>To Date</label> 
+							<input type="text" name="date" id="date" value="0000-00-00" class="form-control" placeholder="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Total Assets</label> 
+							<input type="text" name="asset" id="asset" value="" class="form-control" placeholder="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Total Sales</label> 
+							<input type="text" name="sales" value="" id="sales" class="form-control" placeholder="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Total Liabilities</label>
+							<input type="text" value="" id="liability" name="liability" class="form-control">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Gross Profit</label>
+							<input type="text" value="" id="gp" name="gp" class="form-control">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Equity</label>
+							<input type="text" value="" id="equity" name="equity" class="form-control">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Net</label><br>
+														<div class="row">
+								<div class="col-md-4">
+									<div class="radio radio-info form-check-inline">
+										<input type="radio" id="usyesradio" value="1" name="pl">
+										<label for="inlineRadio1"> Profit </label>
+									</div>
+									<div class="radio form-check-inline">
+										<input type="radio" id="usnoradio" value="2" name="pl" checked="">
+										<label for="inlineRadio2"> Loss </label>
+									</div>
+								</div>
+								<div class="col-md-8">
+									<input type="text" class="form-control" id="np" value="" name="np">
+								</div>
+							</div>
+													</div>
+					</div>
+					<div class="col-md-12 ytd_bankloans">
+						<div class="form-group row">
+							<label class="col-md-3">Number of Bank Loan(s)</label>
+							<div class="col-md-3">
+								<input type="number" id="ytd_no_bank_loans" class="form-control">
+							</div>
+						</div>
+																								</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-12 mb-2">
+						<h5 class="header-title">2018</h5>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Total Assets</label> 
+							<input type="text" name="asset1" id="asset1" value="" class="form-control" placeholder="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Total Sales</label> 
+							<input type="text" name="sales1" value="" id="sales1" class="form-control" placeholder="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Total Liabilities</label>
+							<input type="text" value="" id="liability1" name="liability1" class="form-control">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Gross Profit</label>
+							<input type="text" value="" id="gp1" name="gp1" class="form-control">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Equity</label>
+							<input type="text" value="" id="equity1" name="equity1" class="form-control">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Net</label><br>
+														<div class="row">
+								<div class="col-md-4">
+									<div class="radio radio-info form-check-inline">
+										<input type="radio" id="usyesradio1" value="1" name="pl1">
+										<label for="inlineRadio3"> Profit </label>
+									</div>
+									<div class="radio form-check-inline">
+										<input type="radio" id="usnoradio1" value="2" name="pl1" checked="">
+										<label for="inlineRadio4"> Loss </label>
+									</div>
+								</div>
+								<div class="col-md-8">
+									<input type="text" class="form-control" id="np1" value="" name="np1">
+								</div>
+							</div>
+													</div>
+					</div>
+					<div class="col-md-12 a_bankloans">
+						<div class="form-group row">
+							<label class="col-md-3">Number of Bank Loan(s)</label>
+							<div class="col-md-3">
+								<input type="number" id="a_no_bank_loans" class="form-control">
+							</div>
+						</div>
+																								</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-12 mb-2">
+						<h5 class="header-title">2017</h5>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Total Assets</label> 
+							<input type="text" name="asset2" id="asset2" value="" class="form-control" placeholder="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Total Sales</label> 
+							<input type="text" name="sales2" value="" id="sales2" class="form-control" placeholder="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Total Liabilities</label>
+							<input type="text" value="" id="liability2" name="liability2" class="form-control">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Gross Profit</label>
+							<input type="text" value="" id="gp2" name="gp2" class="form-control">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Equity</label>
+							<input type="text" value="" id="equity2" name="equity2" class="form-control">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Net</label><br>
+														<div class="row">
+								<div class="col-md-4">
+									<div class="radio radio-info form-check-inline">
+										<input type="radio" id="usyesradio2" value="1" name="pl2">
+										<label for="inlineRadio5"> Profit </label>
+									</div>
+									<div class="radio form-check-inline">
+										<input type="radio" id="usnoradio2" value="2" name="pl2" checked="">
+										<label for="inlineRadio6"> Loss </label>
+									</div>
+								</div>
+								<div class="col-md-8">
+									<input type="text" class="form-control" id="np2" value="" name="np2">
+								</div>
+							</div>
+													</div>
+					</div>
+					<div class="col-md-12 b_bankloans">
+						<div class="form-group row">
+							<label class="col-md-3">Number of Bank Loan(s)</label>
+							<div class="col-md-3">
+								<input type="number" id="b_no_bank_loans" class="form-control">
+							</div>
+						</div>
+																								</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="button-list">
+							<button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
+							<button type="cancel" class="btn btn-secondary waves-effect waves-light">Cancel</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+				
+		<div class="card-box card-body border">
+			<h4 class="header-title mb-4">Documents</h4>
+			<div class="row">
+				<div class="col-md-6 mb-4">
+					<div class="row">
+						<div class="col-sm-6 d-flex align-items-center">
+							<p class="mb-0"><b>Trade License</b> &nbsp;&nbsp;
+														<a href="/admin/file/58209f86a8d128cb804d5bd655a6670a.pdf" target="_blank"><i class="far fa-file-pdf"></i>&nbsp;&nbsp;View File</a>
+							</p>
+						</div>
+						<div class="col-sm-6 trade_license">
+							<button type="button" class="mr-2 btn btn-primary btn-sm waves-effect waves-light" data-name="58209f86a8d128cb804d5bd655a6670a.pdf" id="b_acc_tl"><i class="fa fa-check"></i></button>
+							<button type="button" class="btn btn-secondary btn-sm waves-effect waves-light" data-name="58209f86a8d128cb804d5bd655a6670a.pdf" data-value="3" id="b_rej_tl"><i class="fa fa-times"></i></button>
+						</div>
+											</div>
+				</div>
+				<div class="col-md-6 mb-4">
+					<div class="row">
+						<div class="col-sm-6 d-flex align-items-center">
+							<p class="mb-0"><b>Business Profile</b> &nbsp;&nbsp;
+														<a href="/admin/file/231b9afcf0bd59df24dc07ccde0576c6.pdf" target="_blank"><i class="far fa-file-pdf"></i>&nbsp;&nbsp;View File</a>
+							</p>
+						</div>
+						<div class="col-sm-6 business_profile">
+							<button type="button" class="mr-2 btn btn-primary btn-sm waves-effect waves-light" data-name="231b9afcf0bd59df24dc07ccde0576c6.pdf" id="b_acc_bp"><i class="fa fa-check"></i></button>
+							<button type="button" class="btn btn-secondary btn-sm waves-effect waves-light" data-name="231b9afcf0bd59df24dc07ccde0576c6.pdf" data-value="3" id="b_rej_bp"><i class="fa fa-times"></i></button>
+						</div>
+											</div>
+				</div>
+				<div class="col-md-6 mb-4">
+					<div class="row">
+						<div class="col-sm-6 d-flex align-items-center">
+							<p class="mb-0"><b>Audit Reports</b> &nbsp;&nbsp;
+														<a href="/admin/file/5f16a6ee7f4118a28186c5037697fad3.pdf" target="_blank"><i class="far fa-file-pdf"></i>&nbsp;&nbsp;View File</a>
+							</p>
+						</div>
+						<div class="col-sm-6 audit_reports">
+							<button type="button" class="mr-2 btn btn-primary btn-sm waves-effect waves-light" data-name="5f16a6ee7f4118a28186c5037697fad3.pdf" id="b_acc_ar"><i class="fa fa-check"></i></button>
+							<button type="button" class="btn btn-secondary btn-sm waves-effect waves-light" data-name="5f16a6ee7f4118a28186c5037697fad3.pdf" data-value="3" id="b_rej_ar"><i class="fa fa-times"></i></button>
+						</div>
+											</div>
+				</div>
+				<div class="col-md-6 mb-4">
+					<div class="row">
+						<div class="col-sm-6 d-flex align-items-center">
+							<p class="mb-0"><b>Other Related Dcuments</b> &nbsp;&nbsp;
+														<a href="/admin/file/c63377c9ca729cbfd5b38cad082b7a1e.pdf" target="_blank"><i class="far fa-file-pdf"></i>&nbsp;&nbsp;View File</a>
+							</p>
+						</div>
+						<div class="col-sm-6 other_documents">
+							<button class="mr-2 btn btn-primary btn-sm waves-effect waves-light" id="b_acc_od" data-name="c63377c9ca729cbfd5b38cad082b7a1e.pdf"><i class="fa fa-check"></i></button>
+							<button type="button" class="btn btn-secondary btn-sm waves-effect waves-light" id="b_rej_od" data-name="c63377c9ca729cbfd5b38cad082b7a1e.pdf" data-value="3"><i class="fa fa-times"></i></button>
+						</div>	
+											</div>
+				</div>
+			</div>
+			<!-- <div class="row">
+				<table class="table table-borderless table-hover table-centered m-0">
+					<thead class="thead-light">
+						<tr>
+							<th>Sr. No.</th>
+							<th>Particulars</th>
+							<th>Status</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Copy of Passport with Visa</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Copy of Emirated ID</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				</div> -->
+		</div>
+		<div class="card-box card-body border">
+			<form action="/admin/borrowerstatus" method="post" data-parsley-validate="" novalidate="">
+				<h4 class="header-title mb-4">Action</h4>
+				<input type="hidden" name="id" value="3">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<div>
+								<label>Status</label>
+							</div>
+							<select class="form-control" name="status_radio">
+																<option value="2">Accept Profile</option>
+								<option value="1">Email Verified</option>
+								<option value="3">Reject Profile</option>
+															</select>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="button-list">
+							<button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
+							<button type="cancel" class="btn btn-secondary waves-effect waves-light">Cancel</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	
+</div>
+ <!-- Footer Start -->
+						<footer class="footer">
+							 <div class="container-fluid">
+									<div class="row">
+										 <div class="col-md-12 text-center">
+												2019 ©  <a href="">Converge Money</a> All right reserved.
+										 </div>
+									</div>
+							 </div>
+						</footer>
+						<!-- end Footer -->    
+						<!-- Right bar overlay-->
+						<div class="rightbar-overlay"></div>
+						<!-- ============================================================== -->
+						<!-- End Right content here -->
+						<!-- ============================================================== -->
+				 </div>
+				 <!-- end wrapper -->
+			</div>
+		<!-- end wrapper -->
+		<!-- Vendor js -->
+		<script src="javascripts/vendor.min.js"></script>
+		<!-- Footable js -->
+		<script src="javascripts/footable.all.min.js"></script>
+		<!-- Init js -->
+		<script src="javascripts/foo-tables.init.js"></script>
+		
+		<!-- <script src="/libs-user/flatpickr/flatpickr.min.js"></script> -->
+		<script src="javascripts/flatpickr.min.js"></script>
+		<script src="javascripts/jquery.dataTables.min.js"></script>
+		<script src="javascripts/dataTables.bootstrap4.js"></script>
+		<script src="javascripts/dataTables.responsive.min.js"></script>
+		<script src="./Converge Money_files/responsive.bootstrap4.min.js.download"></script>
+		<script src="javascripts/dataTables.buttons.min.js"></script>
+		<script src="./Converge Money_files/buttons.bootstrap4.min.js.download"></script>
+		<script src="javascripts/buttons.html5.min.js"></script>
+		<script src="javascripts/buttons.print.min.js"></script>
+		<script src="javascripts/dataTables.keyTable.min.js"></script>
+		<script src="javascripts/dataTables.select.min.js"></script>
+		<!-- third party js ends -->
+
+		<!-- Datatables init -->
+		<script src="javascripts/datatables.init.js"></script>
+		<!-- <script src="/javascripts-user/custom.js"></script> -->
+
+		<!-- Init js -->
+		<!-- <script src="/javascripts-user/pages/chartjs.init.js"></script> -->
+		<script src="javascripts/app.min.js"></script>
+		<script src="javascripts/custom.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+    $('#example').DataTable();
+} );
+		</script>
+	
+</body>
+</html>

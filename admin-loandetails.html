@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://merklejobs.com:3009/users/dashboard -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title>Converge Money</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="./Converge Money_files/css" rel="stylesheet">
+		<!-- App favicon -->
+		<link rel="shortcut icon" href="http://merklejobs.com:3009/images-user/favicon.png">
+		<!-- Plugins css -->
+		<link href="stylesheets/footable.core.min.css" rel="stylesheet" type="text/css">
+		<link href="stylesheets/dataTables.bootstrap4.css" rel="stylesheet" type="text/css">
+		<link href="stylesheets/responsive.bootstrap4.css" rel="stylesheet" type="text/css">
+		<link href="stylesheets/buttons.bootstrap4.css" rel="stylesheet" type="text/css">
+		<link href="stylesheets/select.bootstrap4.css" rel="stylesheet" type="text/css">
+		<link href="stylesheets/flatpickr.min.css" rel="stylesheet">
+
+		<!-- App css -->
+		<link href="stylesheets/user-bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="stylesheets/icons.min.css" rel="stylesheet" type="text/css">
+        <link href="stylesheets/icofont.min.css" rel="stylesheet" type="text/css">
+        <link href="stylesheets/user-app.min.css" rel="stylesheet" type="text/css">
+        <link href="stylesheets/user-style.css" rel="stylesheet" type="text/css">
+        
+	</head>
+	<body>
+		<!-- Navigation Bar-->
+		<header id="topnav">
+			<!-- Topbar Start -->
+			<div class="navbar-custom">
+				<div class="container-fluid">
+					<ul class="list-unstyled topnav-menu float-right mb-0">
+						<li class="dropdown notification-list">
+							<!-- Mobile menu toggle-->
+							<a class="navbar-toggle nav-link">
+								<div class="lines">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</a>
+							<!-- End mobile menu toggle-->
+						</li>
+					</ul>
+					<!-- LOGO -->
+					<div class="logo-box">
+						<a href="/admin/dashboard" class="logo text-center">
+							<span class="logo-lg">
+								<!--  <h3>LOGO HERE</h3> -->
+								<img src="images/logo.png" alt="" height="40">
+							</span>
+							<span class="logo-sm">
+								<img src="images/logo.png" alt="" height="18">
+							</span>
+						</a>
+					</div>
+				</div>
+				<!-- end container-fluid-->
+			</div>
+			<!-- end Topbar -->      
+			<div class="topbar-menu active">
+				<div class="container-fluid in">
+					<div id="navigation" class="active">
+						<!-- Navigation Menu-->
+						<ul class="navigation-menu in">
+							<li class="nav-item active">
+								<a href="/admin/dashboard" class="nav-link active">Dashboard </a>
+							</li>
+							<!-- <li class="nav-item">
+								<a href="/admin/investments" class="nav-link">Investments</a>
+							</li> -->
+							<li class="nav-item">
+								<a href="admin-loanrequest-list.html" class="nav-link">Loan Requests</a>
+							</li>
+							<!-- <li class="has-submenu">
+								<a href="#">
+										Loans 
+										<div class="arrow-down"></div>
+								</a>
+								<ul class="submenu">
+										<li class="nav-item">
+											<a href="new-loan" class="nav-link">New Loans</a>
+										</li>
+										<li class="nav-item">
+											<a href="listed-loan" class="nav-link">Listed Loans</a>
+										</li>
+										<li class="nav-item">
+											<a href="funded-loan" class="nav-link">Funded Loans</a>
+										</li>
+								</ul>
+							</li> -->
+							<li class="has-submenu">
+								<a href="#">Users<div class="arrow-down"></div></a>
+								<ul class="submenu">
+									<li>
+										<a href="admin-investor-list.html">Investors</a>
+									</li>
+									<li>
+										<a href="admin-business-list.html">Businesses</a>
+									</li>
+								</ul>
+							</li>
+							<!-- <li>
+								<a href="/withdrawals">
+								Withdrawals 
+								</a>
+							</li>
+							<li>
+								<a href="/transactions">
+								Transactions 
+								</a>
+							</li> -->
+
+							<li>
+								<a href="/admin/loantype">Loan Type</a>
+							</li>
+							<li>
+								<a href="/admin/newusers">New Users</a>
+							</li>
+							<li>
+								<a href="/admin/deposits">User Deposits</a>
+							</li>
+							<li class="last-elements">
+								<a href="/admin/contactqueries">Contact Queries</a>
+							</li>
+							<li class="last-elements">
+								<a href="/admin/logout">Logout</a>
+							</li>
+						</ul>
+						<!-- End navigation menu -->
+						<div class="clearfix"></div>
+					</div>
+					<!-- end #navigation -->
+				</div>
+				<!-- end container -->
+			</div>
+			<!-- end navbar-custom -->
+		</header>
+	<!-- End Navigation Bar-->
+	<!-- ============================================================== -->
+	<!-- Start Page Content here -->
+		<!-- ============================================================== -->
+		<div class="wrapper">
+			<div class="container-fluid">
+<div class="row">
+	<div class="col-12">
+		<div class="card-box-tranparent">
+			<div class="page-title-box">
+				<h3>Loan Details</h3>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<div class="card">
+			<div class="card-body">
+				<h4 class="header-title mb-4">Details</h4>
+				<form action="/admin/loandetail_update" method="post">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="amount">Amount</label>
+								<input class="form-control" type="text" id="amount" name="amount" value="500000" placeholder="Enter the loan amount" required="">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>How would the money be used?</label>
+								<input type="hidden" value="5" readonly="" name="loan_type" id="loan_type">
+								<input type="text" readonly="" class="form-control" value="Business Loan">
+								<!-- <select class="form-control" name="loan_type" id="loan_type">
+																																				<option value="1">Debt Consolidation</option>
+																																																						<option value="2">Student Loans</option>
+																																																						<option value="3">Home Improvement</option>
+																																																						<option value="4">Medical/Dental</option>
+																																																						<option value="5">Business</option>
+																																																						<option value="6">Large Purchase</option>
+																																																						<option value="7">Automobile</option>
+																																																						<option value="8">Special Occassion</option>
+																																																						<option value="9">Vacation</option>
+																																																						<option value="10">Taxes</option>
+																																																						<option value="11">Baby or Adoption</option>
+																																																						<option value="12">Other</option>
+																																																						<option value="13">Mortgage</option>
+																																																						<option value="14">Credit Card</option>
+																																			</select> -->
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Description</label>
+								<textarea name="description" id="description" class="form-control" required="" rows="3">Rajesh Silk saree center business, this is silk cloths business</textarea>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Additional Details</label>
+								<textarea name="additionaldetails" id="additionaldetails" class="form-control" required="" rows="3">No need to additional details </textarea>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Listing Type</label>
+								<select class="form-control" name="priority" id="priority">
+																		<option>Select Listing Type</option>
+									<option value="1">Normal</option>
+									<option value="2">Exclusive</option>	
+																	</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Available Till</label>
+								<input type="text" class="form-control flatpickr-input" value="" placeholder="Select validity date" id="basic-datepicker3" name="validity" readonly="readonly">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>Details of the Security Hold</label>
+								<textarea name="security_hold" id="security_hold" class="form-control" required="" rows="3"></textarea>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div><label>Documents</label></div>
+													</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<div>
+									<label>Status</label>
+								</div>
+																<div class="radio radio-dark form-check-inline">
+									<input type="radio" id="inlineRadio1" value="1" name="status_radio" checked="">
+									<label> Processing </label>
+								</div>
+								<div class="radio radio-info form-check-inline">
+									<input type="radio" id="inlineRadio2" value="2" name="status_radio">
+									<label> Approve </label>
+								</div>
+								<div class="radio radio-danger form-check-inline">
+									<input type="radio" id="inlineRadio3" value="3" name="status_radio">
+									<label> Disapprove </label>
+								</div>	
+															</div>
+						</div>
+						<div class="col-md-12 mt-4">
+							<div class="button-list">
+								<input type="hidden" name="loan" value="3">
+								<button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
+								<button type="cancel" class="btn btn-secondary waves-effect waves-light">Cancel</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+ <!-- Footer Start -->
+						<footer class="footer">
+							 <div class="container-fluid">
+									<div class="row">
+										 <div class="col-md-12 text-center">
+												2019 ©  <a href="">Converge Money</a> All right reserved.
+										 </div>
+									</div>
+							 </div>
+						</footer>
+						<!-- end Footer -->    
+						<!-- Right bar overlay-->
+						<div class="rightbar-overlay"></div>
+						<!-- ============================================================== -->
+						<!-- End Right content here -->
+						<!-- ============================================================== -->
+				 </div>
+				 <!-- end wrapper -->
+			</div>
+		<!-- end wrapper -->
+		<!-- Vendor js -->
+		<script src="javascripts/vendor.min.js"></script>
+		<!-- Footable js -->
+		<script src="javascripts/footable.all.min.js"></script>
+		<!-- Init js -->
+		<script src="javascripts/foo-tables.init.js"></script>
+		
+		<!-- <script src="/libs-user/flatpickr/flatpickr.min.js"></script> -->
+		<script src="javascripts/flatpickr.min.js"></script>
+		<script src="javascripts/jquery.dataTables.min.js"></script>
+		<script src="javascripts/dataTables.bootstrap4.js"></script>
+		<script src="javascripts/dataTables.responsive.min.js"></script>
+		<script src="./Converge Money_files/responsive.bootstrap4.min.js.download"></script>
+		<script src="javascripts/dataTables.buttons.min.js"></script>
+		<script src="./Converge Money_files/buttons.bootstrap4.min.js.download"></script>
+		<script src="javascripts/buttons.html5.min.js"></script>
+		<script src="javascripts/buttons.print.min.js"></script>
+		<script src="javascripts/dataTables.keyTable.min.js"></script>
+		<script src="javascripts/dataTables.select.min.js"></script>
+		<!-- third party js ends -->
+
+		<!-- Datatables init -->
+		<script src="javascripts/datatables.init.js"></script>
+		<!-- <script src="/javascripts-user/custom.js"></script> -->
+
+		<!-- Init js -->
+		<!-- <script src="/javascripts-user/pages/chartjs.init.js"></script> -->
+		<script src="javascripts/app.min.js"></script>
+		<script src="javascripts/custom.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+    $('#example').DataTable();
+} );
+		</script>
+	
+</body>
+</html>
